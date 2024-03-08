@@ -24,41 +24,15 @@ header .header-content button{
     font-size: 22px;
     font-weight: 500;
     position: relative;
-margin-top: 8rem;
+margin-top: 10rem;
+transition: all 0.4s;
+}
+header .header-content button:hover{
+    background-color: #0069da;
+border: 1px solid #;
 }
 
-.header-content button::before{
-    content: '';
-    /* background-color: blue; */
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: -7px;
-    top: -7px;
-    border-top:4px solid #2196f3;
-    border-left:4px solid #2196f3;
-    transition: all 0.3s;
-}
-.header-content button::after{
-    content: '';
-    /* background-color: blue; */
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: -7px;
-    bottom: -7px;
-    border-bottom:4px solid #2196f3;
-    border-right:4px solid #2196f3;
-    transition: all 0.3s;
-}
-.header-content button:hover::before{
-    width: 100%;
-    height: 100%;
-}
-.header-content button:hover::after{
-    width: 100%;
-    height: 100%;
-}
+
 
 /* h1 start  */
 
@@ -81,28 +55,21 @@ margin-top: 8rem;
     
   }
   .box h1:nth-child(2){
-    /* background-color: #fff; */
     color: #fff;
     overflow: hidden;
     transition: all 0.5s;
     z-index: 2;
     clip-path: polygon(0 0, 100% 0, 0 99%, 0% 100%);
   }
-  .box h1:nth-child(2):hover{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
+  
   .box h1:nth-child(1){
-    /* background-color: #fff; */
     color: #2196f3;
     overflow: hidden;
     transition: all 0.5s;
     z-index: 2;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
   }
-  .box h1:nth-child(1):hover{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    z-index: 3;
-  }
+  
 
 
 /* h1 end */
@@ -157,6 +124,53 @@ nav{
  .progress-bar{
     border-radius: 16px;
  }
+ /* button about start  */
+#about button{
+    background-color: #007bff;
+    border: none;
+    padding:6px 20px ;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+#about button::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    border-top:3px solid #2196f3;
+    border-left:3px solid #2196f3;
+    transition: all 0.3s;
+}
+#about button::after{
+    content: '';
+    /* background-color: blue; */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -7px;
+    bottom: -7px;
+    border-bottom:3px solid #2196f3;
+    border-right:3px solid #2196f3;
+    transition: all 0.3s;
+}
+#about button:hover::before{
+    width: 100%;
+    height: 100%;
+}
+#about button:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+ /* button about end  */
+
+
 /* about end  */
 
 /* services start  */
